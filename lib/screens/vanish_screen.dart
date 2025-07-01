@@ -75,7 +75,7 @@ class _VanishScreenState extends State<VanishScreen>
                 // ),
                 // SizedBox(height: 24),
                 Text(
-                  "BigBoos Designer",
+                  "Cut List",
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 32,

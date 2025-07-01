@@ -41,7 +41,7 @@ class _FolderListScreenState extends State<FolderListScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Folders")),
+      appBar: AppBar(title: Text("Client Folders")),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: GridView.builder(
@@ -135,10 +135,10 @@ class _FolderListScreenState extends State<FolderListScreen> {
       context: context,
       builder: (context) {
         return AlertDialog(
-          title: Text('Create New Folder'),
+          title: Text('Insert Client Name'),
           content: TextField(
             controller: _folderController,
-            decoration: InputDecoration(labelText: 'Folder Name'),
+            decoration: InputDecoration(labelText: 'Client Name'),
           ),
           actions: <Widget>[
             TextButton(

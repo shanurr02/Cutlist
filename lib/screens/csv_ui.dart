@@ -426,7 +426,7 @@ class _CsvDisplayPageState extends State<CsvDisplayPage> {
       appBar: AppBar(
         title: Text('Cut List'),
       ),
-      drawer: SidePanel(), // Add the side panel here
+      // drawer: SidePanel(), // Add the side panel here
 
       body: LayoutBuilder(
         builder: (context, constraints) {

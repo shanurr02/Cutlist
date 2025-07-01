@@ -57,17 +57,18 @@ class _FileScreenState extends State<FileScreen> {
       context: context,
       builder: (context) {
         return AlertDialog(
-          title: Text('Create New File'),
+          title: Text('Add New Object'),
           content: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
               TextField(
                 controller: _fileController,
-                decoration: InputDecoration(labelText: 'File Name'),
+                decoration:
+                    InputDecoration(labelText: 'Location Name (eg: Room)'),
               ),
               TextField(
                 controller: _contentController,
-                decoration: InputDecoration(labelText: 'File Content'),
+                decoration: InputDecoration(labelText: 'Any Comments'),
               ),
             ],
           ),
@@ -94,7 +95,7 @@ class _FileScreenState extends State<FileScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Files")),
+      appBar: AppBar(title: Text("Project List")),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: ListView.builder(
@@ -146,10 +147,10 @@ class _FileScreenState extends State<FileScreen> {
             left: 16,
             child: FloatingActionButton(
               onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => DrawingScreen()),
-                );
+                // Navigator.push(
+                //   // context,
+                //   // MaterialPageRoute(builder: (context) => DrawingScreen()),
+                // );
               },
               child: Icon(Icons.brush),
               backgroundColor: Colors.green,
