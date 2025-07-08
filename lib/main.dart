@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Folder & File App',
+      title: 'Folder and File App',
       theme: ThemeData(primarySwatch: Colors.blue),
       home: VanishScreen(), // Start with the Vanish screen
     );
